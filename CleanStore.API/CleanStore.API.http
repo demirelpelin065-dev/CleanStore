@@ -1,0 +1,6 @@
+@CleanStore.API_HostAddress = http://localhost:5115
+
+GET {{CleanStore.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
