@@ -37,5 +37,12 @@ public class ApplicationDbContext : DbContext
         modelBuilder.Entity<Product>()
             .Property(product => product.Price)
             .HasColumnType("decimal(18,2)");
+
+        modelBuilder.Entity<Category>().HasData(
+            new Category
+            {
+                Id = 1,
+                Name = "Electronics"
+            });
     }
 }
